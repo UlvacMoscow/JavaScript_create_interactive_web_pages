@@ -8,27 +8,8 @@ const image = document.getElementById('slider');
 let step = 0;
 
 
-/*function next() {
-  if (step === collections.length)  {
-    step = 0;
-  }
-    image.src = collections[step];
-    step += 1;
-};
-
-
-setInterval(next(), 5000);*/
-
 setInterval(() => {
-	slider.src = collections[step];
+	image.src = collections[step];
 		if (step < collections.length) step += 1;
 		if (step === collections.length) step = 0;
 }, 5000);
-
-/*let index = 0;
-setInterval(function() {
-  if(index == images.length) index = 0;
-document.getElementById('slider').src = images[index++];}, 5000);*/
-
-
-//next_image(collections[0]);
